@@ -23,13 +23,14 @@ const friends = [
 const check = () => friends.findIndex(friend => friend.includes("@korea"));
 
 let target = check();
+if(target !== 1){
+    console.log(target);
 
-console.log(target);
+    const username = friends[target].split("@")[0];
 
-const username = friends[target].split("@")[0];
+    const email = "korea.com";
 
-const email = "korea.com";
-
-friends[target] = `${username}@${email}`;
+    friends[target] = `${username}@${email}`;
+}
 // 강의에서 -1 를 반환했던 이유는 찾지 못했기 때문에 -1를 반환하는것이다
 target = check();
