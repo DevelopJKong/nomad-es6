@@ -28,6 +28,7 @@ const lastName = prompt("Last Name");
 // }
 
 // second way
+// optional object propert (선택적인 속성값)
 const user = {
     username: "nico",
     age:24,
